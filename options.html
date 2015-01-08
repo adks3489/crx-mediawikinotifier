@@ -1,0 +1,33 @@
+<html>
+<head>
+  <title>Options for MediaWiki Notifier</title>
+  <script type="text/javascript" src="scripts/jquery-2.1.3.min.js"></script>
+  <script type="text/javascript" src="scripts/options.js"></script>
+  <link rel=stylesheet type="text/css" href="bootstrap/bootstrap.min.css">
+</head>
+<body>
+  <form>
+    <div class="form-group">
+      <label for="inputAPIURL">API URL</label>
+      <input type="text" class="form-control" id="inputAPIURL" placeholder="http://host/mediawiki/api.php">
+    </div>
+    <div class="form-group">
+      <label for="inputTitle">Monitor Title</label>
+      <input type="text" class="form-control" id="inputTitle" placeholder="首頁">
+    </div>
+    <div class="form-group">
+      <label for="inputRangeStarter">Range Start From</label>
+      <input type="text" class="form-control" id="inputRangeStarter" placeholder="=Start=">
+    </div>
+    <div class="form-group">
+      <label for="inputRangeEnder">Range End</label>
+      <input type="text" class="form-control" id="inputRangeEnder" placeholder="=End=">
+    </div>
+    <div class="form-group">
+      <label for="inputAnchor">View Anchor Html</label>
+      <input type="text" class="form-control" id="inputAnchor" placeholder='<span class="mw-headline" id="Start"><a href="/mediawiki/index.php/Start" title="首頁">Start</a></span>'>
+    </div>
+    <button id="btnSave" class="btn btn-primary">Submit</button>
+  </form>
+</body>
+</html>

@@ -1,0 +1,17 @@
+{
+  "manifest_version": 2,
+
+  "name": "MediaWiki Notifier",
+  "description": "MediaWiki Notifier.",
+  "version": "1.0",
+  "permissions": [
+    "<all_urls>","background", "storage", "notifications", "alarms", "activeTab"
+  ],
+  "options_page": "options.html",
+  "background": {
+    "scripts": [
+      "scripts/background.js","scripts/difflib.js"
+    ],
+    "persistent": true
+  }
+}
